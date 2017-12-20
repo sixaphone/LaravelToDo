@@ -2784,3 +2784,21 @@ Did you mean this?
 #20 E:\\xampp\\htdocs\\todo\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #21 {main}
 "} 
+[2017-12-20 18:11:52] production.ERROR: Directory name must not be empty. {"exception":"[object] (RuntimeException(code: 0): Directory name must not be empty. at E:\\xampp\\htdocs\\todo\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:52)
+[stacktrace]
+#0 E:\\xampp\\htdocs\\todo\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php(52): RecursiveDirectoryIterator->__construct('', 4096)
+#1 E:\\xampp\\htdocs\\todo\\vendor\\symfony\\finder\\Finder.php(676): Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 E:\\xampp\\htdocs\\todo\\vendor\\symfony\\finder\\Finder.php(564): Symfony\\Component\\Finder\\Finder->searchInDirectory('')
+#3 E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(87): Symfony\\Component\\Finder\\Finder->getIterator()
+#4 E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(64): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#5 E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(213): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(296): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(119): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 E:\\xampp\\htdocs\\todo\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2017-12-20 17:18:23] local.ERROR: Illuminate\Routing\Router::loadRoutes(): Failed opening required 'E:\xampp\htdocs\todo\routes/web.php' (include_path='E:\xampp\php\PEAR') {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Illuminate\\Routing\\Router::loadRoutes(): Failed opening required 'E:\\xampp\\htdocs\\todo\outes/web.php' (include_path='E:\\xampp\\php\\PEAR') at E:\\xampp\\htdocs\\todo\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:393)
+[stacktrace]
+#0 {main}
+"} 
