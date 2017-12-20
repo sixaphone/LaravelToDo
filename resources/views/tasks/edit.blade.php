@@ -39,7 +39,7 @@
                         </div>
                         <br>
                         <div class="from-group pull-left">
-                            <input type="submit" class="btn btn-primary" name="submit" value="Add Tasks">
+                            <input type="submit" class="btn btn-primary" name="submit" value="Update Tasks">
                         </div>
                 </div>
                 </form>
@@ -50,7 +50,11 @@
 
 <script>
 var marked =  document.getElementsByClassName("important");
-marked[document.getElementById('oldU').value-1].style.background = document.getElementById('oldC').value;
+var idLabel = document.getElementById('oldU').value-1;
+marked[idLabel].style.background = document.getElementById('oldC').value;
+document.getElementById("u"+marked[idLabel].id.substr(1,2)).setAttribute("checked",true);
+
+
 
     function changeColor(e,color){
         var labels = document.getElementsByClassName("important");
