@@ -15,33 +15,11 @@ How To Install:
 - This enables localhost:8000
 - Go there and have fun finishing tasks
 
-Screens:
+Pages:
 
 - Home
-
-
 - Login and register
-
-
-
-
 - Tasks
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--Adding new tasks
+- Adding new tasks
 
 
