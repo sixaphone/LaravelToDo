@@ -102,6 +102,7 @@ class TasksController extends Controller
             $task->color = $color[$request->urgency-1];
             $task->user_id = auth()->user()->id;
             $task->finished = false;
+            $task->deleted = false;
             $task->save();
             $task = null;
             return redirect('/home')->with('success','Task successfully added');
